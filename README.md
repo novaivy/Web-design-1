@@ -56,7 +56,7 @@ IvyPortfolio/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/novaivy/Web-design-1.git
    cd IvyPortfolio
    ```
 
