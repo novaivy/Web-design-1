@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Node (if ever added)
+node_modules/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+
+# Backup files
+*.bak
+*.swp
+
+#Firebase
+.firebase
+
+#firebase-debug.log
+
+./firebase-debug.log
+
+./firebase-debug.log.lmdb
+
+./public/js/firebase-config.js
+./public/backend/index.js

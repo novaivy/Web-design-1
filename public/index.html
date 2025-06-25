@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Adhiambo IvyNovareen, a BBIT graduate and software developer." />
+  <meta name="keywords"
+    content="Adhiambo IvyNovareen, Portfolio, Software Developer, BBIT Graduate, Digital Transformation" />
+  <meta name="author" content="Adhiambo IvyNovareen" />
+  <title>Adhiambo IvyNovareen | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="logo">
+      <h3>Portfolio.</h3>
+    </div>
+    <nav class="desktop-nav">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="download-cv" onclick="downloadCV()">Download CV</button>
+      <button class="theme-toggle" type="button" onclick="toggleTheme()" title="Toggle Theme">
+        <span class="theme-icon">
+          <i class="fas fa-sun"></i>
+        </span>
+      </button>
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" title="Toggle Menu">
+        <span class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <nav class="mobile-nav hidden">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- Custom Alert -->
+  <div id="custom-alert" class="alert-overlay">
+    <div id="alert-box" class="alert-box info">
+      <i id="alert-icon" class="alert-icon fa-solid fa-circle-info"></i>
+      <p id="alert-message">This is a custom alert!</p>
+      <button onclick="closeAlert()">OK</button>
+    </div>
+  </div>
+
+
+
+  <main class="main-content">
+    <section id="introduction">
+      <!-- Default structure for larger screens -->
+      <div class="grid large-screen">
+        <div class="profile-intro">
+          <h3>Hello, It's Me</h3>
+          <h1>Adhiambo IvyNovareen</h1>
+          <h4>IT Student | Software Developer</h4>
+          <p>Welcome to my portfolio! I'm passionate about creating innovative digital solutions and helping others learn programming. Let's build something amazing together!</p>
+          <div class="intro-actions">
+            <button class="cta-primary" onclick="scrollToSection('contact')">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </button>
+            <button class="cta-secondary" onclick="scrollToSection('projects')">
+              <i class="fas fa-code"></i>
+              View My Work
+            </button>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="./images/portfolioImg.jpg" alt="Portfolio Image">
+        </div>
+      </div>
+
+      <!-- Hidden structure for smaller screens -->
+      <div class="small-screen">
+        <div class="profile-intro">
+          <h3>Hello, It's Me</h3>
+          <h1>Adhiambo IvyNovareen</h1>
+          <h4>IT Student | Software Developer </h4>
+          <p>Welcome to my portfolio! I'm passionate about creating innovative digital solutions and helping others learn programming. Let's build something amazing together!</p>
+          <div class="intro-actions">
+            <button class="cta-primary" onclick="scrollToSection('contact')">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </button>
+            <button class="cta-secondary" onclick="scrollToSection('projects')">
+              <i class="fas fa-code"></i>
+              View My Work
+            </button>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="./images/portfolioImg.jpg" alt="Portfolio Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          A passionate and driven Information Technology student with hands-on experience in programming
+          languages such as HTML, CSS, JavaScript, VB.NET, Java, and PHP.
+        </p>
+        <p>Eager to contribute to technological innovation and problem-solving within dynamic environments.</p>
+
+        <p>Committed to continuous learning, teamwork, and offering creative solutions.</p>
+
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>My Services</h2>
+      <div class="grid">
+
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>I build fast, interactive, and secure web applications using React (TypeScript/JavaScript), Tailwind, and
+            Spring Boot. Ideal for dashboards, admin panels, and full-stack systems with clean REST APIs.</p>
+        </div>
+
+
+        <div class="service">
+          <h3>Document Editing & Academic Formatting</h3>
+          <p>I assist with formatting professional documents, academic proposals, reports, and research work using
+            tools like Microsoft Word, Google Docs, and LaTeX — ensuring clarity and compliance with required
+            standards.</p>
+        </div>
+
+        <div class="service">
+          <h3>Mentorship & Tutoring</h3>
+          <p>I offer mentorship in programming (Java, C++, Python, Flutter, etc), database design, and final year
+            project
+            implementation. I also provide support for Git/GitHub workflows and deployment strategies.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <div class="project">
+          <div class="project-header">
+            <h3>Portfolio Website</h3>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <p><strong>Overview:</strong> A responsive personal portfolio website showcasing my skills, projects, and experience. Features dark/light theme toggle, mobile-responsive design, and contact form integration.</p>
+          <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Font Awesome, Google Fonts</p>
+          <p><strong>Features:</strong> Responsive design, theme switching, smooth scrolling, contact form, mobile navigation</p>
+        </div>
+
+        <div class="project">
+          
+          <div class="project-header">
+            <h3>Gists & Class Code Samples</h3>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <p><strong>Overview:</strong> Includes Java OOP examples, basic HTML/CSS designs, C++ loops/functions, and
+            VB.NET form logic developed during coursework.</p>
+          <p><strong>Usage:</strong> These gists are used by students I mentor and during coding bootcamps.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Freelance Web Developer</h3>
+            <span class="experience-date">Jan 2025 - Present</span>
+          </div>
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Develop responsive websites and web applications for clients</li>
+            <li>Collaborate with clients to understand requirements and deliver solutions</li>
+            <li>Implement modern web technologies and best practices</li>
+            <li>Provide ongoing maintenance and support for existing projects</li>
+          </ul>
+          <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, React, PHP, MySQL</p>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Academic Project Assistant</h3>
+            <span class="experience-date">Oct 2024 - Present</span>
+          </div>
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Assisted fellow students with academic projects and assignments</li>
+            <li>Provided guidance on software development methodologies</li>
+            <li>Helped with documentation and presentation of technical projects</li>
+            <li>Collaborated on team-based programming assignments</li>
+          </ul>
+          <p><strong>Focus Areas:</strong> Software Engineering, Database Systems, Web Development</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="sih">
+      <h2>Skills Acquired</h2>
+
+      <div id="skills" class="card">
+
+        <p>Over the years, I have acquired a diverse set of skills that enable me to tackle various challenges in the
+          tech industry. My skills include:</p>
+
+        <div class="grid">
+
+          <div class="skill-category">
+            <h4>Web Development</h4>
+            <ul>
+              <li>HTML, CSS, JavaScript, TypeScript, React</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>Backend Development</h4>
+            <ul>
+              <li>Java, PHP, VB.NET</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-category">
+            <h4>Tools & Version Control</h4>
+            <ul>
+              <li>Git, GitHub</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Communication, Teamwork, Problem Solving</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>Personal Attributes</h4>
+            <ul>
+              <li>Time Management, Adaptability, Attention to Detail</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <ul>
+              <li>English, Kiswahili</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <p><strong>Kabarak University</strong> – Information Technology <em>(IT)</em></p>
+          <p>Ongoing</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies, Interests & Personal Attributes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Hobbies & Interests</h3>
+          <ul>
+            <li>Adventuring and tourism</li>
+            <li>Singing (Talented Vocalist)</li>
+            <li>Research and Innovation</li>
+            <li>Problem Solving</li>
+          </ul>
+
+
+        </div>
+
+        <div class="card">
+          <h3>Personal Attributes</h3>
+          <ul>
+            <li>Self-motivated and passionate about growth</li>
+            <li>A natural problem solver</li>
+            <li>Effective communicator</li>
+            <li>Compassionate and team-oriented</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <p class="contact-intro">
+          I'm always open to new opportunities, collaborations, or just a friendly chat. Whether you have a project in
+          mind,
+          want to discuss potential roles, or simply want to say hello—I'd love to hear from you! Feel free to reach out
+          through
+          the form below or contact me directly using the details provided.
+        </p>
+
+        <div class="contact-info">
+          <p> Email: <a href="mailto:ivynova3@gmail.com"> ivynova3@gmail.com</a>
+          </p>
+          <p> Call/SMS: <a href="tel:254728138474"> (+254) 728 138474</a></p>
+          <p>
+            WhatsApp: <a href="https://wa.me/254728138474" target="_blank" aria-label="WhatsApp" rel="noopener">
+              (+254) 728 138474
+            </a>
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="form-content">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname">First Name *</label>
+              <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name *</label>
+              <input type="text" id="lastname" name="lastname" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or how I can help you..."></textarea>
+          </div>
+          
+          <div class="button-container">
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
+
+      <div class="copyrights">
+        <p><i class="fa fa-map-marker-alt"></i> Kenya | Remote Friendly.</p>
+      </div>
+
+      <p class="copyrights"> Lets Connect on Social Media: </p>
+      <div class="social-media">
+        <a href="https://linkedin.com/in/ivynovareen" target="_blank" class="social-icon"
+          aria-label="LinkedIn" rel="noopener">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ivynovareen" target="_blank" rel="noopener" class="social-icon"
+          aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/ivynovareen" target="_blank" class="social-icon"
+          aria-label="Twitter" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@ivynovareen" target="_blank" class="social-icon"
+          aria-label="YouTube" rel="noopener">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://facebook.com/ivynovareen" target="_blank" class="social-icon" aria-label="Facebook"
+          rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/ivynovareen" target="_blank" class="social-icon"
+          aria-label="Instagram" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://tiktok.com/@ivynovareen" target="_blank" class="social-icon"
+          aria-label="TikTok" rel="noopener">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://t.me/ivynovareen" target="_blank" aria-label="Telegram" class="social-icon" rel="noopener">
+          <i class="fab fa-telegram-plane"></i></a>
+      </div>
+
+      <div class="copyrights">
+       <span id="copyright"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" onclick="scrollToTop()" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    document.getElementById("copyright").innerHTML = `&copy; ${new Date().getFullYear()} Adhiambo IvyNovareen. All Rights Reserved.`;
+  </script>
+
+  <script src="./js/index.js" type="text/javascript" async></script>
+
+</body>
+
+
+</html>
