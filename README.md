@@ -36,7 +36,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ## 📁 Project Structure
 
 ```
-IvyPortfolio/
+
 ├── public/
 │   ├── css/
 │   │   └── index.css          # Main stylesheet with enhancements
@@ -57,7 +57,7 @@ IvyPortfolio/
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/novaivy/Web-design-1.git
-   cd IvyPortfolio
+   
    ```
 
 2. **Open the website**:
